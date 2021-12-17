@@ -1,0 +1,31 @@
+header {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background-color: #671e85;
+  background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilePic {
+  margin: auto;
+}
+
+.profileImg img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.name {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
