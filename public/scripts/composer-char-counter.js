@@ -1,12 +1,13 @@
-$().ready(function() {
-  $("#tweet-text").keyup(function() {
-    let tweetLength = $(this).val().length;
-    let remainder = $(this).siblings(".counter")[0];
-    remainder.value = 140 - tweetLength;
-    if (remainder.value < 0) {
-      $(this).siblings(".counter").addClass("invalid");
+$(document).ready(function() {
+  $("#tweet-text").on('keyup', function() {
+    let tweetCounter = $(this).val().length;
+    $("output").text(140-tweetCounter);
+    let $tc = $(this).parent().find('.counter');
+    console.log("tc test", $(this).parent());
+    if (tweetCounter <= 140) {
+      $tc.removeClass('error');
     } else {
-      $(this).siblings(".counter").removeClass("invalid");
+      $tc.addClass('error');
     }
-  });
+  })
 });
