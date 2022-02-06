@@ -45,8 +45,10 @@ const createTweetElement = function(tweet) {
             </div>
           </footer>
         </article> `)
+
   return $tweet;
 };
+
 
 const renderTweets = function(tweets) {
     $(".tweets-container").empty();
@@ -54,6 +56,7 @@ const renderTweets = function(tweets) {
       $('.tweets-container').prepend(createTweetElement(tweet));
     }
 }
+
 
 const $newTweet = $('#tweet-form');
   $newTweet.on('submit', function(event) {
