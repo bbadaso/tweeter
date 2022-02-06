@@ -3,6 +3,7 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+
 $(document).ready(function () {
   const loadTweets = function() {
     $.ajax({
@@ -16,11 +17,13 @@ $(document).ready(function () {
     }); 
   };
 loadTweets();
+
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+
 const createTweetElement = function(tweet) {
   let date = timeago.format(tweet.created_at);
   let $tweet = $(
@@ -44,12 +47,14 @@ const createTweetElement = function(tweet) {
         </article> `)
   return $tweet;
 };
+
 const renderTweets = function(tweets) {
     $(".tweets-container").empty();
     for (let tweet of tweets) {
       $('.tweets-container').prepend(createTweetElement(tweet));
     }
 }
+
 const $newTweet = $('#tweet-form');
   $newTweet.on('submit', function(event) {
     event.preventDefault();

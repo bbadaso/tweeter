@@ -24,6 +24,19 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- .logo {
-font-family: "Bungee", cursive;
- }
+ .main-container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.logo {
+  font-family: "Bungee", cursive;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-right: 60px;
+  font-family: "Source Sans Pro", sans-serif;
+}

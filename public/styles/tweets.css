@@ -12,6 +12,7 @@
   background-color: #e4e2e2;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 }
+
 .tweet-header .left {
   float: left;
   margin-right: 20px;
@@ -47,16 +48,24 @@
 #tweets {
   border: 3px solid;
 }
+
 .new-tweet {
   padding-bottom: 15%;
 }
+
 .tweet-header:hover {
   box-shadow: 10px 5px 5px #d8d3d3;
   text-shadow: 1px 1px;
 }
+
 .fa-retweet:hover {
   color: rgb(255, 208, 0);
 }
+
 .fa-heart:hover {
+  color: rgb(255, 208, 0);
+}
+
+.fa-flag:hover {
   color: rgb(255, 208, 0);
 }

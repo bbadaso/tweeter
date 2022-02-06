@@ -1,5 +1,4 @@
 header {
-  height: 400px;
   width: 100%;
   position: relative;
   background-color: #cbdbeb;
@@ -28,4 +27,11 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.header {
+  height: 400px;
+  width: 60%;
+  position: relative;
+  margin: 60px;
 }
