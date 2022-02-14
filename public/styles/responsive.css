@@ -1,27 +1,13 @@
-.hello {
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  margin-top: 35px;
-  /* margin: 10px 50px 50px; */
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .hello {
-    display: flex;
-    align-items: start;
-    flex-direction: row;
-    margin-top: 200px;
-    bottom: 20px;
-  }
-
-  nav {
-    background-color: #4056a1;
-  }
-}
-
 @media (max-width: 767px) {
+  .main-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    margin-top: 35px;
+    /* margin: 10px 50px 50px; */
+    width: 100%;
+  }
+
   .header {
     width: 100%;
     margin: 0;
